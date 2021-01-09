@@ -70,10 +70,11 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        // Thay thế việc Xác thực tài khoản bằng model `Nhanvien`
+        'users' => [
+            'driver' => 'custom',
+            'model' => App\Nhanvien::class,
+        ],
     ],
 
     /*

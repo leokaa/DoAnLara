@@ -52,7 +52,7 @@
                     {{ csrf_field() }}
                     <input type="hidden" name="_method" value="DELETE" />
                     <button type="button" class="btn btn-warning"  >Xoa</button>
-                </form>
+        </form>
     </td>
 </tr>
 @endforeach

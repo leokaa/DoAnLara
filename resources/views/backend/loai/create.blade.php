@@ -7,7 +7,7 @@ Trang them moi loai
 @section('content')
 
 
-    <form method="post" action="{{ route('loai.store') }}" enctype="multipart/form-data">
+    <form method="post" action="{{ route('admin.loai.store') }}" enctype="multipart/form-data">
          {{ csrf_field() }}
 
         <div class="form-group">

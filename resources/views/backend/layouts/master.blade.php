@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+    
+    <!-- custom cho css -->    
+    @yield('custom-css')
 
 </head>
 
@@ -49,6 +52,8 @@
     
     <!-- Các custom script dành riêng cho từng view -->
     @yield('custom-alert')
+    @yield('custom-js')
+
 
 </body>
 

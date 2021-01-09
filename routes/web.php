@@ -39,5 +39,16 @@ Route::delete('admin/loai/destroy/{id}', 'Backend\LoaiController@destroy')->name
 
 
 //Backend sanpham
-route::resource('/admin/sanpham','Backend\SanPhamController');
+Route::get('/admin/sanpham/print', 'Backend\SanPhamController@print')->name('admin.sanpham.print');
+Route::get('/admin/danhsachsanpham/pdf', 'Backend\SanPhamController@pdf')->name('danhsachsanpham.pdf');
+route::resource('/admin/sanpham','Backend\SanPhamController',['as' => 'admin']);
+
+
+
+
+
+
+
+
+
 
