@@ -90,6 +90,11 @@ return [
     |
     */
 
+    'locale' => 'vi',
+
+    // Bổ sung thêm danh sách các ngôn ngữ
+    'locales' => ['vi', 'en'],
+
     'fallback_locale' => 'en',
 
     /*

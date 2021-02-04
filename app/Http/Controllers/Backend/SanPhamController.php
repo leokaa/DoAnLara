@@ -20,7 +20,8 @@ class SanPhamController extends Controller
      */
     public function index()
     {
-        $dsSanPham = Sanpham::all();
+        //$dsSanPham = Sanpham::all();
+        $dsSanPham = SanPham::paginate(5);
         return view('backend.sanpham.index')->with('dsSanPham',$dsSanPham);
     }
 

@@ -52,5 +52,5 @@
         </tr>
     </tbody>
 </table>
-
+{{ $dsSanPham->links() }}
 @endsection

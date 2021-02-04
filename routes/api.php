@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ApiController;
 use Illuminate\Http\Request;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Http\Request;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+
+route::get('/thongke/top3_sanpham_moinhat',[ApiController::class, 'thongke_top3_sanpham_moinhat'])->name('api.thongke.top3_sanpham_moinhat');
+Route::get('/thongke', 'Frontend\FrontendController@thongke')->name('frontend.pages.thongke');
